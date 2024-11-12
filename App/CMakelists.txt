@@ -1,0 +1,12 @@
+set(LIB_NAME App)
+
+file(GLOB_RECURSE app_head_files "${CMAKE_CURRENT_SOURCE_DIR}/*.h")
+file(GLOB_RECURSE app_source_files "${CMAKE_CURRENT_SOURCE_DIR}/*.cpp")
+
+add_library(${LIB_NAME} STATIC ${app_head_files} ${app_source_files})
+
+target_include_directories(
+    ${LIB_NAME} 
+    PRIVATE
+    ${CMAKE_CURRENT_SOURCE_DIR}
+    )

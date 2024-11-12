@@ -1,0 +1,17 @@
+cmake_minimum_required(VERSION 3.10)
+
+# 项目名
+project(CodeSnippet)
+
+set(CMAKE_CXX_STANDARD 17)
+
+# 可执行文件输出路径
+set(EXECUTABLE_OUTPUT_PATH ${CMAKE_CURRENT_SOURCE_DIR}/bin)
+
+
+set(prj_root_dir ${CMAKE_CURRENT_SOURCE_DIR})
+set(app_root_dir ${prj_root_dir}/App)
+set(sandbox_root_dir ${prj_root_dir}/Sandbox)
+
+add_subdirectory(App)
+add_subdirectory(Sandbox)
