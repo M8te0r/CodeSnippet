@@ -1,11 +1,12 @@
 cmake_minimum_required(VERSION 3.10)
 
-# ÏîÄ¿Ãû
+# ï¿½ï¿½Ä¿ï¿½ï¿½
 project(CodeSnippet)
 
 set(CMAKE_CXX_STANDARD 17)
 
-# ¿ÉÖ´ÐÐÎÄ¼þÊä³öÂ·¾¶
+
+# ï¿½ï¿½Ö´ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½
 set(EXECUTABLE_OUTPUT_PATH ${CMAKE_CURRENT_SOURCE_DIR}/bin)
 
 
